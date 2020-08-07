@@ -1,0 +1,418 @@
+
+7_segment.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000001a  00800100  000001ee  00000262  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001ee  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000027c  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000002ac  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  000002ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000a91  00000000  00000000  0000030c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000834  00000000  00000000  00000d9d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000408  00000000  00000000  000015d1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000034  00000000  00000000  000019dc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000041c  00000000  00000000  00001a10  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000031d  00000000  00000000  00001e2c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000040  00000000  00000000  00002149  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ee ee       	ldi	r30, 0xEE	; 238
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	aa 31       	cpi	r26, 0x1A	; 26
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	02 d0       	rcall	.+4      	; 0xb8 <main>
+  b4:	9a c0       	rjmp	.+308    	; 0x1ea <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <main>:
+// -: PORTG = 0x40		64
+//배열로 만들경우 
+// int phone [13] = {63,6,63,64,103,7,91,124,64,63,63,91,127}
+				//    0 1  0  -  9  7 2   6  - 0  0   2   8
+ int main(void)
+ {
+  b8:	cf 93       	push	r28
+  ba:	df 93       	push	r29
+  bc:	cd b7       	in	r28, 0x3d	; 61
+  be:	de b7       	in	r29, 0x3e	; 62
+  c0:	6a 97       	sbiw	r28, 0x1a	; 26
+  c2:	0f b6       	in	r0, 0x3f	; 63
+  c4:	f8 94       	cli
+  c6:	de bf       	out	0x3e, r29	; 62
+  c8:	0f be       	out	0x3f, r0	; 63
+  ca:	cd bf       	out	0x3d, r28	; 61
+	 int phone [13] = {63,6,63,64,103,7,91,124,64,63,63,91,127};
+  cc:	8a e1       	ldi	r24, 0x1A	; 26
+  ce:	e0 e0       	ldi	r30, 0x00	; 0
+  d0:	f1 e0       	ldi	r31, 0x01	; 1
+  d2:	de 01       	movw	r26, r28
+  d4:	11 96       	adiw	r26, 0x01	; 1
+  d6:	01 90       	ld	r0, Z+
+  d8:	0d 92       	st	X+, r0
+  da:	8a 95       	dec	r24
+  dc:	e1 f7       	brne	.-8      	; 0xd6 <main+0x1e>
+	 DDRC = 0xff;
+  de:	8f ef       	ldi	r24, 0xFF	; 255
+  e0:	84 bb       	out	0x14, r24	; 20
+	 DDRG = 0x0f;
+  e2:	8f e0       	ldi	r24, 0x0F	; 15
+  e4:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+  e8:	be 01       	movw	r22, r28
+  ea:	6f 5f       	subi	r22, 0xFF	; 255
+  ec:	7f 4f       	sbci	r23, 0xFF	; 255
+	 {
+		 
+		 for (int i = 0 ; i < 9 ; i++){
+			
+			for(int j = 0 ; j <25 ; j++){  //40ms *25  1초간 3번 약 1초간 
+				PORTG = 0x0e;  
+  ee:	e5 e6       	ldi	r30, 0x65	; 101
+  f0:	f0 e0       	ldi	r31, 0x00	; 0
+  f2:	4e e0       	ldi	r20, 0x0E	; 14
+				PORTC = phone[i]; //9
+				_delay_ms(10);
+			
+				PORTG = 0x0d;
+  f4:	0f 2e       	mov	r0, r31
+  f6:	fd e0       	ldi	r31, 0x0D	; 13
+  f8:	ff 2e       	mov	r15, r31
+  fa:	f0 2d       	mov	r31, r0
+				PORTC = phone[i+1];//10
+				_delay_ms(10);
+				
+				PORTG = 0x0b;
+  fc:	0b e0       	ldi	r16, 0x0B	; 11
+				PORTC = phone[i+2]; //11
+				_delay_ms(10);
+					
+				PORTG = 0x07;
+  fe:	17 e0       	ldi	r17, 0x07	; 7
+			for(int j = 0 ; j <25 ; j++){  //40ms *25  1초간 3번 약 1초간 
+				PORTG = 0x0e;  
+				PORTC = phone[i]; //9
+				_delay_ms(10);
+			
+				PORTG = 0x0d;
+ 100:	cf 2c       	mov	r12, r15
+				PORTC = phone[i+1];//10
+				_delay_ms(10);
+				
+				PORTG = 0x0b;
+ 102:	d0 2e       	mov	r13, r16
+				PORTC = phone[i+2]; //11
+				_delay_ms(10);
+					
+				PORTG = 0x07;
+ 104:	e1 2e       	mov	r14, r17
+ 106:	5e 01       	movw	r10, r28
+ 108:	83 e1       	ldi	r24, 0x13	; 19
+ 10a:	a8 0e       	add	r10, r24
+ 10c:	b1 1c       	adc	r11, r1
+// -: PORTG = 0x40		64
+//배열로 만들경우 
+// int phone [13] = {63,6,63,64,103,7,91,124,64,63,63,91,127}
+				//    0 1  0  -  9  7 2   6  - 0  0   2   8
+ int main(void)
+ {
+ 10e:	cb 01       	movw	r24, r22
+ 110:	32 c0       	rjmp	.+100    	; 0x176 <main+0xbe>
+	 {
+		 
+		 for (int i = 0 ; i < 9 ; i++){
+			
+			for(int j = 0 ; j <25 ; j++){  //40ms *25  1초간 3번 약 1초간 
+				PORTG = 0x0e;  
+ 112:	40 83       	st	Z, r20
+				PORTC = phone[i]; //9
+ 114:	dc 01       	movw	r26, r24
+ 116:	5c 91       	ld	r21, X
+ 118:	55 bb       	out	0x15, r21	; 21
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 11a:	af e3       	ldi	r26, 0x3F	; 63
+ 11c:	bc e9       	ldi	r27, 0x9C	; 156
+ 11e:	11 97       	sbiw	r26, 0x01	; 1
+ 120:	f1 f7       	brne	.-4      	; 0x11e <main+0x66>
+ 122:	00 c0       	rjmp	.+0      	; 0x124 <main+0x6c>
+ 124:	00 00       	nop
+				_delay_ms(10);
+			
+				PORTG = 0x0d;
+ 126:	c0 82       	st	Z, r12
+				PORTC = phone[i+1];//10
+ 128:	dc 01       	movw	r26, r24
+ 12a:	12 96       	adiw	r26, 0x02	; 2
+ 12c:	5c 91       	ld	r21, X
+ 12e:	55 bb       	out	0x15, r21	; 21
+ 130:	af e3       	ldi	r26, 0x3F	; 63
+ 132:	bc e9       	ldi	r27, 0x9C	; 156
+ 134:	11 97       	sbiw	r26, 0x01	; 1
+ 136:	f1 f7       	brne	.-4      	; 0x134 <main+0x7c>
+ 138:	00 c0       	rjmp	.+0      	; 0x13a <main+0x82>
+ 13a:	00 00       	nop
+				_delay_ms(10);
+				
+				PORTG = 0x0b;
+ 13c:	d0 82       	st	Z, r13
+				PORTC = phone[i+2]; //11
+ 13e:	dc 01       	movw	r26, r24
+ 140:	14 96       	adiw	r26, 0x04	; 4
+ 142:	5c 91       	ld	r21, X
+ 144:	55 bb       	out	0x15, r21	; 21
+ 146:	af e3       	ldi	r26, 0x3F	; 63
+ 148:	bc e9       	ldi	r27, 0x9C	; 156
+ 14a:	11 97       	sbiw	r26, 0x01	; 1
+ 14c:	f1 f7       	brne	.-4      	; 0x14a <main+0x92>
+ 14e:	00 c0       	rjmp	.+0      	; 0x150 <main+0x98>
+ 150:	00 00       	nop
+				_delay_ms(10);
+					
+				PORTG = 0x07;
+ 152:	e0 82       	st	Z, r14
+				PORTC = phone[i+3]; //12
+ 154:	dc 01       	movw	r26, r24
+ 156:	16 96       	adiw	r26, 0x06	; 6
+ 158:	5c 91       	ld	r21, X
+ 15a:	55 bb       	out	0x15, r21	; 21
+ 15c:	af e3       	ldi	r26, 0x3F	; 63
+ 15e:	bc e9       	ldi	r27, 0x9C	; 156
+ 160:	11 97       	sbiw	r26, 0x01	; 1
+ 162:	f1 f7       	brne	.-4      	; 0x160 <main+0xa8>
+ 164:	00 c0       	rjmp	.+0      	; 0x166 <main+0xae>
+ 166:	00 00       	nop
+ 168:	21 50       	subi	r18, 0x01	; 1
+ 16a:	31 09       	sbc	r19, r1
+	 while (1)
+	 {
+		 
+		 for (int i = 0 ; i < 9 ; i++){
+			
+			for(int j = 0 ; j <25 ; j++){  //40ms *25  1초간 3번 약 1초간 
+ 16c:	91 f6       	brne	.-92     	; 0x112 <main+0x5a>
+ 16e:	02 96       	adiw	r24, 0x02	; 2
+	 DDRC = 0xff;
+	 DDRG = 0x0f;
+	 while (1)
+	 {
+		 
+		 for (int i = 0 ; i < 9 ; i++){
+ 170:	8a 15       	cp	r24, r10
+ 172:	9b 05       	cpc	r25, r11
+ 174:	b9 f1       	breq	.+110    	; 0x1e4 <main+0x12c>
+// -: PORTG = 0x40		64
+//배열로 만들경우 
+// int phone [13] = {63,6,63,64,103,7,91,124,64,63,63,91,127}
+				//    0 1  0  -  9  7 2   6  - 0  0   2   8
+ int main(void)
+ {
+ 176:	29 e1       	ldi	r18, 0x19	; 25
+ 178:	30 e0       	ldi	r19, 0x00	; 0
+ 17a:	cb cf       	rjmp	.-106    	; 0x112 <main+0x5a>
+		 
+		 
+		 
+		  for (int i = 9 ; i > 0 ; i--){
+				  for(int j = 0 ; j <25 ; j++){  //40ms *25  1초간 3번 약 1초간 
+				  PORTG = 0x0e;
+ 17c:	40 83       	st	Z, r20
+				  PORTC = phone[i]; //9
+ 17e:	d5 01       	movw	r26, r10
+ 180:	2c 91       	ld	r18, X
+ 182:	25 bb       	out	0x15, r18	; 21
+ 184:	af e3       	ldi	r26, 0x3F	; 63
+ 186:	bc e9       	ldi	r27, 0x9C	; 156
+ 188:	11 97       	sbiw	r26, 0x01	; 1
+ 18a:	f1 f7       	brne	.-4      	; 0x188 <main+0xd0>
+ 18c:	00 c0       	rjmp	.+0      	; 0x18e <main+0xd6>
+ 18e:	00 00       	nop
+				 	 _delay_ms(10);
+			  
+				  PORTG = 0x0d;
+ 190:	f0 82       	st	Z, r15
+				  PORTC = phone[i+1]; //10
+ 192:	d5 01       	movw	r26, r10
+ 194:	12 96       	adiw	r26, 0x02	; 2
+ 196:	2c 91       	ld	r18, X
+ 198:	25 bb       	out	0x15, r18	; 21
+ 19a:	af e3       	ldi	r26, 0x3F	; 63
+ 19c:	bc e9       	ldi	r27, 0x9C	; 156
+ 19e:	11 97       	sbiw	r26, 0x01	; 1
+ 1a0:	f1 f7       	brne	.-4      	; 0x19e <main+0xe6>
+ 1a2:	00 c0       	rjmp	.+0      	; 0x1a4 <main+0xec>
+ 1a4:	00 00       	nop
+					 _delay_ms(10);
+			  
+				  PORTG = 0x0b;
+ 1a6:	00 83       	st	Z, r16
+				  PORTC = phone[i+2];// 11
+ 1a8:	d5 01       	movw	r26, r10
+ 1aa:	14 96       	adiw	r26, 0x04	; 4
+ 1ac:	2c 91       	ld	r18, X
+ 1ae:	25 bb       	out	0x15, r18	; 21
+ 1b0:	af e3       	ldi	r26, 0x3F	; 63
+ 1b2:	bc e9       	ldi	r27, 0x9C	; 156
+ 1b4:	11 97       	sbiw	r26, 0x01	; 1
+ 1b6:	f1 f7       	brne	.-4      	; 0x1b4 <main+0xfc>
+ 1b8:	00 c0       	rjmp	.+0      	; 0x1ba <main+0x102>
+ 1ba:	00 00       	nop
+					 _delay_ms(10);
+			  
+				  PORTG = 0x07;
+ 1bc:	10 83       	st	Z, r17
+				  PORTC = phone[i+3]; //12
+ 1be:	d5 01       	movw	r26, r10
+ 1c0:	16 96       	adiw	r26, 0x06	; 6
+ 1c2:	2c 91       	ld	r18, X
+ 1c4:	25 bb       	out	0x15, r18	; 21
+ 1c6:	af e3       	ldi	r26, 0x3F	; 63
+ 1c8:	bc e9       	ldi	r27, 0x9C	; 156
+ 1ca:	11 97       	sbiw	r26, 0x01	; 1
+ 1cc:	f1 f7       	brne	.-4      	; 0x1ca <main+0x112>
+ 1ce:	00 c0       	rjmp	.+0      	; 0x1d0 <main+0x118>
+ 1d0:	00 00       	nop
+ 1d2:	01 97       	sbiw	r24, 0x01	; 1
+		 }
+		 
+		 
+		 
+		  for (int i = 9 ; i > 0 ; i--){
+				  for(int j = 0 ; j <25 ; j++){  //40ms *25  1초간 3번 약 1초간 
+ 1d4:	99 f6       	brne	.-90     	; 0x17c <main+0xc4>
+ 1d6:	b2 e0       	ldi	r27, 0x02	; 2
+ 1d8:	ab 1a       	sub	r10, r27
+ 1da:	b1 08       	sbc	r11, r1
+			}
+		 }
+		 
+		 
+		 
+		  for (int i = 9 ; i > 0 ; i--){
+ 1dc:	a6 16       	cp	r10, r22
+ 1de:	b7 06       	cpc	r11, r23
+ 1e0:	09 f4       	brne	.+2      	; 0x1e4 <main+0x12c>
+ 1e2:	91 cf       	rjmp	.-222    	; 0x106 <main+0x4e>
+// -: PORTG = 0x40		64
+//배열로 만들경우 
+// int phone [13] = {63,6,63,64,103,7,91,124,64,63,63,91,127}
+				//    0 1  0  -  9  7 2   6  - 0  0   2   8
+ int main(void)
+ {
+ 1e4:	89 e1       	ldi	r24, 0x19	; 25
+ 1e6:	90 e0       	ldi	r25, 0x00	; 0
+ 1e8:	c9 cf       	rjmp	.-110    	; 0x17c <main+0xc4>
+
+000001ea <_exit>:
+ 1ea:	f8 94       	cli
+
+000001ec <__stop_program>:
+ 1ec:	ff cf       	rjmp	.-2      	; 0x1ec <__stop_program>
